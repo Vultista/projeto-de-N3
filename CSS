@@ -1,0 +1,95 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header e Navegação */
+header {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+/* Seções */
+section {
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#sobre {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #eee;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer a {
+    color: #eee;
+    text-decoration: none;
+}
+
+/* Responsividade (desktop) */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    section {
+        max-width: 45%;
+    }
+}
